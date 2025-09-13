@@ -1,0 +1,30 @@
+<div class="details-card-layout" (click)="toggleMoreDetails()">
+  <div class="details-card-layout__header">
+    <h4>Lorem S</h4>
+  </div>
+  <div class="details-card-layout__content">
+    <div class="details-card-layout__content__icon">
+      <div class="icon-content">
+        <div class="details-card-layout__content__icon__image">
+          <mat-icon>storage</mat-icon>
+        </div>
+        <div class="details-card-layout__content__icon__text">
+          <span>Server</span>
+          <span>Server</span>
+        </div>
+      </div>
+    </div>
+    <div class="details-card-layout__content__details">
+      <div>Lorem Ipsum</div>
+      <div>Dolor Sit Amet</div>
+      <div>Consectetur</div>
+    </div>
+  </div>
+  @if (showMoreDetails()) {
+  <div class="details-card-layout__more-content">
+    <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur. Nunc Vitae Convallis Vitae Arcu. Magna
+    </p>
+  </div>
+  }
+</div>

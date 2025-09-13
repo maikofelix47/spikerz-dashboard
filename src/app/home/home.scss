@@ -1,0 +1,50 @@
+.home-layout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 2%;
+    min-height: 100vh;
+    padding: 2%;
+    &__details{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        width: 40%;
+        min-height: 100vh;
+        background-color: #FFF;
+        border-radius: 5px;
+        padding: 2%;
+        row-gap: 2%;
+    }
+    &__stats{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        background-color: #FFF;
+        border-radius: 5px;
+        padding: 2%;
+        row-gap: 2%;
+        &__graph{
+            display: flex;
+            flex-direction: column;
+            background-color: #f9fafc;
+             padding: 2%;
+        }
+        &__other{
+            display: flex;
+            flex-direction: row;
+            column-gap: 2%;
+            padding: 2%;
+            &__asset{
+                width: 50%;
+            }
+            &__risk{
+                width: 50%;
+            }
+        }
+    }
+}
+.section{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}

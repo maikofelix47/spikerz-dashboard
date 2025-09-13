@@ -1,0 +1,40 @@
+<div class="asset-card-layout">
+  <div class="asset-card-layout__header"></div>
+  <div class="asset-card-layout__content">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+         <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+            <div class="table-item">
+                  <mat-icon>{{ element.icon }}</mat-icon>
+            </div>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="asset">
+        <th mat-header-cell *matHeaderCellDef>Asset</th>
+        <td mat-cell *matCellDef="let element">
+             <div class="table-item">
+                  {{ element?.asset }}
+             </div>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="risk">
+        <th mat-header-cell *matHeaderCellDef>Risk</th>
+        <td mat-cell *matCellDef="let element">
+            <app-badge [message]="element?.risk" 
+            [badgeType]="'danger'"></app-badge>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns()"></tr>
+    </table>
+    <mat-divider></mat-divider>
+    <span>&nbsp;</span>
+    <mat-paginator [pageSizeOptions]="[2,5]"
+                 showFirstLastButtons
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+  </div>
+  <div class="asset-card-layout__footer"></div>
+</div>

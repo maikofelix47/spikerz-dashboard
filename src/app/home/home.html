@@ -1,0 +1,33 @@
+<div class="home-layout">
+  <div class="home-layout__details">
+     <app-description [title]="'Description'"></app-description>
+     <app-description [title]="'Extra'"></app-description>
+    <mat-divider></mat-divider>
+    <div class="section">
+        <app-profile></app-profile>
+    </div>
+    <div class="section">
+        <app-detail-card></app-detail-card>
+    </div>
+     <div class="section">
+         <app-detail-card></app-detail-card>
+     </div>
+      <div class="section">
+       <app-detail-card></app-detail-card>
+      </div>
+  </div>
+  <div class="home-layout__stats">
+     <div class="home-layout__stats__graph">
+       Graph
+     </div>
+     <div class="home-layout__stats__other">
+         <div class="home-layout__stats__other__asset">
+               <app-asset-card></app-asset-card>
+         </div>
+          <div class="home-layout__stats__other__risk">
+              <app-risk-card></app-risk-card>
+         </div>
+         
+     </div>
+  </div>
+</div>

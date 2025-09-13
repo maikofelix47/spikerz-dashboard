@@ -1,0 +1,28 @@
+.side-nav-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFF;
+    height: 100vh;
+}
+
+.side-nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.side-nav-list-item{
+    color: gray;
+    font-size: 20px;
+    height: 30px;
+    padding: 10px;
+   
+}
+.side-nav-list-item:hover{
+    background-color: #d4edda;
+    color: gray;
+    cursor: pointer;
+}

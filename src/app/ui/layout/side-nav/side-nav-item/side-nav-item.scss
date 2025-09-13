@@ -1,18 +1,17 @@
-.dashboard-layout{
+.side-item-layout{
     display: flex;
     flex-direction: row;
     width: 100%;
-    column-gap: 1vw;
-    background: #f9fafc;
-    &__side-nav{
+    &__icon{
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 15%;
+        justify-content: center;
     }
-    &__main-content{
+    &__title{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 88%;
+        justify-content: center;
     }
-    
 }

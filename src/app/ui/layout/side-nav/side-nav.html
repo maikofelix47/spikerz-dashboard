@@ -1,0 +1,15 @@
+<div class="side-nav-layout">
+        <div class="side-nav-layout__nav-list">
+             <ul class="side-nav-list">
+                @for (sideNavItem of sideNavItems(); track $index) {
+                   <li class="side-nav-list-item">
+                     <app-side-nav-item 
+                     [icon]="sideNavItem.icon" 
+                     [title]="sideNavItem.title">
+                    </app-side-nav-item>
+                   </li>
+                }
+               
+             </ul>
+        </div>
+</div>
