@@ -1,15 +1,24 @@
-<div class="side-nav-layout">
+<div class="side-nav-layout" [ngClass]="{'full-width': !collapseSideNav,'collapsed-width': collapseSideNav}">
         <div class="side-nav-layout__nav-list">
-             <ul class="side-nav-list">
+             <ul class="side-nav-layout__nav-list__side-nav-list">
                 @for (sideNavItem of sideNavItems(); track $index) {
                    <li class="side-nav-list-item">
                      <app-side-nav-item 
                      [icon]="sideNavItem.icon" 
-                     [title]="sideNavItem.title">
+                     [title]="sideNavItem.title"
+                     [collapseMenu]="collapseSideNav"
+                     >
                     </app-side-nav-item>
+                
                    </li>
                 }
                
              </ul>
+              <div class="side-nav-layout__nav-list__toggle-nav-btn">
+                       <button class="toggle-navbar-btn" (click)="toggleSideNavCollapse()">
+                          <mat-icon>keyboard_arrow_left</mat-icon>
+                       </button>
+                         
+              </div>
         </div>
 </div>

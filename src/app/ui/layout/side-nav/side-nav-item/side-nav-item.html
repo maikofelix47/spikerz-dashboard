@@ -1,8 +1,10 @@
 <div class="side-item-layout">
      <div class="side-item-layout__icon">
-          <mat-icon aria-hidden="false" aria-label="Example home icon" [fontIcon]="icon"></mat-icon>
+          <img ngSrc="/assets/menu-items/{{icon}}-menu.png"  width="20" height="20"/>
      </div>
+     @if(!collapseMenu){
       <div class="side-item-layout__title">
          {{ title }}
      </div>
+    }
 </div>

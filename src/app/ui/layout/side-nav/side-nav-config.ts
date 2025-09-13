@@ -2,31 +2,31 @@ import { SideNavCongig } from './type';
 
 export const sideNavConfig: SideNavCongig = [
   {
-    icon: 'dashboard',
+    icon: 'layout',
     title: 'Lorem',
   },
   {
-    icon: 'warning',
+    icon: 'danger',
     title: 'Lorem',
   },
   {
-    icon: 'home',
+    icon: 'box',
     title: 'Lorem',
   },
   {
-    icon: 'home',
+    icon: 'cross',
     title: 'Lorem',
   },
   {
-    icon: 'power',
+    icon: 'plug',
     title: 'Lorem',
   },
   {
-    icon: 'home',
+    icon: 'file',
     title: 'Lorem',
   },
   {
-    icon: 'home',
+    icon: 'list',
     title: 'Lorem',
   },
 ];

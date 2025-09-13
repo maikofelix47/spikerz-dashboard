@@ -1,10 +1,15 @@
 <div class="dashboard-layout">
-   <div class="dashboard-layout__side-nav">
-        <app-side-nav></app-side-nav>
-   </div>
-   <div class="dashboard-layout__main-content">
-         <router-outlet />
-   </div>
+  <ng-container *ngIf="collapseSideNav$ | async"></ng-container>
+  <div
+    class="dashboard-layout__side-nav"
+    [ngClass]="{
+      'full-side-nav': !collapseSideNav,
+      'collapsed-side-nav': collapseSideNav
+    }"
+  >
+    <app-side-nav></app-side-nav>
+  </div>
+  <div class="dashboard-layout__main-content">
+    <router-outlet />
+  </div>
 </div>
-
-
