@@ -6,6 +6,7 @@ import { BadgeType } from '../badge/type';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { AssetType } from './type';
 import { MatDivider } from '@angular/material/divider';
+import { NgOptimizedImage } from '@angular/common';
 @Component({
   selector: 'app-asset-card',
   templateUrl: './asset-card.html',
@@ -17,6 +18,7 @@ import { MatDivider } from '@angular/material/divider';
     MatPaginatorModule,
     MatPaginator,
     MatDivider,
+    NgOptimizedImage,
   ],
 })
 export class AssetCard implements AfterViewInit {

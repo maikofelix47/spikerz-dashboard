@@ -13,19 +13,31 @@ html {
 
 body {
   color-scheme: light;
-
-  background-color: #f9fafc;
+  background-color: #525D73;
   color: var(--mat-sys-on-surface);
   font: var(--mat-sys-body-medium);
   margin: 0;
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 1%;
+  color: #525D73;
+;
+
+}
 
 .section-title{
-    color: green;
-    font-weight: 400;
+    color:#02983E;
+    font-size: 20px;
+    font-weight: 700;
 }
 .green-icon{
    color: green;

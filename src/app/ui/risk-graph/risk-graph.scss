@@ -1,0 +1,15 @@
+.risk-graph-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__graph{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}

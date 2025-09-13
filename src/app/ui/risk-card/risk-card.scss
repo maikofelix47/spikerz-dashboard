@@ -14,11 +14,11 @@
         &__stats{
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 30%;
             
         }
         &__graph{
-            width: 50%;
+            width: 70%;
         }
     }
 }
@@ -34,4 +34,7 @@
 .risk-stats{
     list-style: none;
     padding-left: 2%;
+}
+.risk-stat-item{
+    margin-bottom: 10%;
 }
