@@ -2,7 +2,7 @@
   <div class="risk-graph-layout__graph">
     <div class="graph-row">
       <div class="offset-graph-item-6"></div>
-      <div class="graph-item">
+      <div class="graph-item tooltip5">
         <img
           ngSrc="/assets/graph/load-balancer-top.png"
           width="53"
@@ -10,6 +10,11 @@
         />
         <span>Loremipsummdolor</span>
         <span>192.168.1.1</span>
+         <app-tool-tip-text 
+        class="tooltiptext5" 
+        [text]="'Loremipsummdolor 192.168.1.1'"
+        [imgLink]="'/assets/graph/load-balancer.png'"
+        ></app-tool-tip-text>
       </div>
     </div>
     <div class="graph-row">
@@ -17,36 +22,35 @@
       <div class="graph-item tooltip1">
         <img ngSrc="/assets/graph/mask.png" width="53" height="53" />
         <p>Loremipsumm</p>
-         <div class="tooltiptext1">
-             <div class="tooltip-row">
-                <div class="orange-text">
-                   Lorem Ipsum Dolor Sit
-                </div>
-             </div>
-              <div class="tooltip-row">
-                
-             </div>
-              <div class="tooltip-row">
-                
-             </div>
-              <div class="tooltip-row">
-                
-             </div>
-         </div>
+        <app-tool-tip-text 
+        class="tooltiptext1" 
+        [text]="'Loremipsumm dolorsit'"
+        [imgLink]="'/assets/graph/mask.png'"
+        ></app-tool-tip-text>
       </div>
       <div class="graph-item">
         <img src="/assets/graph/arrow.png" width="40" height="auto" />
       </div>
-      <div class="graph-item">
+      <div class="graph-item tooltip2">
         <img ngSrc="/assets/graph/load-balancer.png" width="53" height="53" />
         <p>Loremipsumm</p>
+         <app-tool-tip-text 
+        class="tooltiptext2" 
+        [text]="'Loremipsumm dolorsit'"
+        [imgLink]="'/assets/graph/load-balancer.png'"
+        ></app-tool-tip-text>
       </div>
       <div class="graph-item">
         <img src="/assets/graph/arrow.png" width="40" height="auto" />
       </div>
-      <div class="graph-item">
+      <div class="graph-item tooltip3">
         <img ngSrc="/assets/graph/load-balancer.png" width="53" height="53" />
         <p>Loremipsumm</p>
+         <app-tool-tip-text 
+        class="tooltiptext3" 
+        [text]="'Loremipsumm dolorsit'"
+        [imgLink]="'/assets/graph/load-balancer.png'"
+        ></app-tool-tip-text>
       </div>
       <div class="graph-item">
         <div class="rotated-arrow-up">
@@ -59,7 +63,7 @@
     </div>
     <div class="graph-row">
       <div class="offset-graph-item-6"></div>
-      <div class="graph-item">
+      <div class="graph-item tooltip4">
         <img
           ngSrc="/assets/graph/load-balancer-top.png"
           width="53"
@@ -67,6 +71,11 @@
         />
         <span>Loremipsummdolorsit002</span>
         <span>192.168.1.2</span>
+         <app-tool-tip-text 
+        class="tooltiptext4" 
+        [text]="'Loremipsummdolorsit002 192.168.1.2'"
+        [imgLink]="'/assets/graph/load-balancer-top.png'"
+        ></app-tool-tip-text>
       </div>
     </div>
   </div>

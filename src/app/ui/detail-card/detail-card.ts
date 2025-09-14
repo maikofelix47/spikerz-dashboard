@@ -11,7 +11,6 @@ import { NgOptimizedImage } from '@angular/common';
 export class DetailCardComponent {
   showMoreDetails = signal<boolean>(false);
   toggleMoreDetails() {
-    console.log('toggle view...');
     this.showMoreDetails.set(!this.showMoreDetails());
   }
 }

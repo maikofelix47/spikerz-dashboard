@@ -32,9 +32,17 @@
     padding-right: 1rem;;
 }
 .risk-stats{
-    list-style: none;
     padding-left: 2%;
 }
 .risk-stat-item{
     margin-bottom: 10%;
+}
+.danger-item > li::marker{
+  color: #C6190D;
+}
+.medium-item > li::marker{
+  color: #EBA622;
+}
+.low-item > li::marker{
+ color: #08B94E;
 }

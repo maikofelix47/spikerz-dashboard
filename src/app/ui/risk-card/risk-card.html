@@ -1,20 +1,28 @@
 <div class="risk-card-layout">
-    <div class="risk-card">
-      <div class="risk-card-layout__header">
-         <h3 class="card-grey-title">Contextual Risk</h3>
+  <div class="risk-card">
+    <div class="risk-card-layout__header">
+      <h3 class="card-grey-title">Contextual Risk</h3>
+    </div>
+    <div class="risk-card-layout__content">
+      <div class="risk-card-layout__content__stats">
+        <ul class="risk-stats">
+          <div class="danger-item">
+            <li class="risk-stat-item"><strong>2</strong> Critical</li>
+          </div>
+          <div class="danger-item">
+            <li class="risk-stat-item"><strong>0</strong> High</li>
+          </div>
+          <div class="medium-item">
+            <li class="risk-stat-item"><strong>0</strong> Medium</li>
+          </div>
+          <div class="medium-item">
+            <li class="risk-stat-item"><strong>0</strong> Low</li>
+          </div>
+        </ul>
       </div>
-      <div class="risk-card-layout__content">
-           <div class="risk-card-layout__content__stats">
-              <ul class="risk-stats">
-                  <li class="risk-stat-item">2 Critical</li>
-                  <li class="risk-stat-item">0 High</li>
-                  <li class="risk-stat-item">0 Medium</li>
-                  <li class="risk-stat-item">0 Low</li>
-              </ul>
-           </div>
-           <div class="risk-card-layout__content__graph">
-               <img ngSrc="/assets/red-graph.png" width="200" height="200"/>
-           </div>
+      <div class="risk-card-layout__content__graph">
+        <img ngSrc="/assets/red-graph.png" width="200" height="200" />
       </div>
     </div>
+  </div>
 </div>
